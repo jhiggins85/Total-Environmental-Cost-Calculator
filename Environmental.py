@@ -31,7 +31,7 @@ df_unique
 df_comp.head()
 
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.SANDSTONE],use_pages = True, pages_folder = '')
-
+server = app.server
 RowT = dbc.Row(
     children= [html.H1('Environmental Cost Explorer', style={'textAlign': 'center'}),
                html.P('Select Desired Industry & Country to see their Environmental Costs and the top 10 companies that attribute to the cost')]
